@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
 
 
 def readme():
@@ -17,7 +17,7 @@ setup(
     url="https://github.com/plumerai/larq-zoo",
     packages=find_packages(),
     license="Apache 2.0",
-    install_requires=["numpy>=1.15", "larq~=0.8.2", "zookeeper==1.0.dev6"],
+    install_requires=["numpy>=1.15", "larq~=0.8.2", "zookeeper>=1.0b4"],
     extras_require={
         "tensorflow": ["tensorflow>=2.0.0"],
         "tensorflow_gpu": ["tensorflow-gpu>=2.0.0"],
