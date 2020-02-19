@@ -117,7 +117,6 @@ class BinaryDenseNet(Model):
                 weights_path = self.imagenet_weights.get_path()
             else:
                 weights_path = self.imagenet_no_top_weights.get_path()
-            print(weights_path)
             model.load_weights(weights_path)
         elif weights is not None:
             model.load_weights(weights)
